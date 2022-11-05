@@ -271,9 +271,9 @@ span {
   position: absolute;
   top: 50%;
   left: 50%;
-  min-height: 500px;
-  min-width: 521px;
-  padding: 15px;
+  height: 581px;
+  width: 528px;
+  padding: 40px;
   background-color: var(--background-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -346,33 +346,31 @@ textarea {
 }
 
 .form-title {
+  margin-bottom: 12px;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
-  margin-top: 40px;
   justify-content: center;
 }
 
-.modal-form {
-  padding: 40px;
-}
-
 .form-field {
+  display: flex;
   position: relative;
-  margin-bottom: 28px;
+  flex-direction: column;
+  text-align: start;
+  margin-bottom: 10px;
 }
 
 .form-label {
-  position: absolute;
+  margin-bottom: 4px;
+  font-weight: 400;
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
   color: var(--primary-text-color);
-  top: -50%;
-  left: 0;
   transform: translateY(20%);
 }
 
@@ -400,14 +398,17 @@ textarea {
 
 .icon-form {
   position: absolute;
-  top: 50%;
-  left: 12px;
-  display: inline-block;
+  top: calc(50% + 7px);
+  left: 15px;
   transform: translateY(-50%);
 }
 
 .form-comment {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  margin-bottom: 10px;
 }
 
 .commentar {
@@ -422,7 +423,10 @@ textarea {
 }
 
 .form-area {
+  display: block;
   width: 100%;
+  margin-left: auto;
+  margin-right: auto;
   padding: 12px 16px;
   height: 120px;
   outline: transparent;
@@ -431,6 +435,7 @@ textarea {
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
+  cursor: pointer;
 }
 
 .form-area::placeholder {
@@ -503,7 +508,8 @@ textarea {
   background-color: var(--accent-color);
   border: none;
   border-radius: 4px;
-  margin: 30px auto 0;
+  margin: 0 auto;
+  margin-top: 30px;
   transition-property: background-color, fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
