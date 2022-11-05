@@ -656,7 +656,7 @@ textarea {
 .team-social-link:hover,
 .team-social-link:focus {
   background-color: var(--accent-color);
-  color: var(--title-text-color);
+  color: var(--white-color);
 }
 
 .team-social-icon {
