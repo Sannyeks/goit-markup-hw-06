@@ -371,7 +371,6 @@ textarea {
   line-height: 1.16;
   letter-spacing: 0.01em;
   color: var(--primary-text-color);
-  transform: translateY(20%);
 }
 
 .form-input {
@@ -408,18 +407,15 @@ textarea {
   display: flex;
   flex-direction: column;
   text-align: start;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .commentar {
-  position: absolute;
+  margin-bottom: 4px;
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
   color: var(--title-text-color);
-  top: 0;
-  left: 0;
-  transform: translateY(-120%);
 }
 
 .form-area {
@@ -440,10 +436,6 @@ textarea {
 
 .form-area::placeholder {
   color: rgba(117, 117, 117, 0.5);
-}
-
-.form-checkbox {
-  padding-top: 20px;
 }
 
 .label-check {
@@ -489,7 +481,7 @@ textarea {
 .input-checkbox:checked + .icon-checkbox {
   border-color: #2196f3;
   background-color: #2196f3;
-  background-image: url(/images/icon-check.svg);
+  background-image: url(../images/icon-check.svg);
   background-size: contain;
   background-origin: border-box;
 }
@@ -814,7 +806,7 @@ textarea {
 .footer-social-link:hover,
 .footer-social-link:focus {
   background-color: var(--accent-color);
-  color: var(--title-text-color);
+  color: var(--white-color);
 }
 
 .footer-social-icon {
